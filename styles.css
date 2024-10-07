@@ -33,10 +33,57 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+}
+
 body {
     font-family: "Kumbh Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "YOPQ" 300;
+    /* background: linear-gradient(var(--clr-SoftViolet), var(--clr-SoftBlue)); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container{
+    border: 2px solid black;
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+}
+
+.illustration-section, .accordions-section{
+    flex: 1;
+    
+}
+
+.img-wrapper{
+    position: relative;
+    width: 600px;
+    border: 2px solid red;
+}
+
+.illustration-woman{
+    position: relative;
+    max-width: 100%;
+}
+
+.illustration-box, .bg-pattern-desktop{
+    position: absolute;
+    max-width: 100%;
+    left: 0;
+}
+
+.bg-pattern-desktop{
+    height: 500px;
+}
+
+.illustration-box{
+    top: 50;
 }
