@@ -72,12 +72,27 @@ body {
 .illustration-woman{
     position: relative;
     max-width: 100%;
+    border: 2px solid lime;
 }
 
 .illustration-box, .bg-pattern-desktop{
     position: absolute;
     max-width: 100%;
     left: 0;
+}
+
+.illustration-box{
+    border: 2px solid yellow;
+}
+
+.bg-pattern-desktop{
+    border: 2px solid blue;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: inherit;
+    height: 100px;
 }
 
 .bg-pattern-desktop{
