@@ -58,18 +58,25 @@ body {
     display: flex;
 }
 
-.illustration-section, .accordions-section{
+.illustration-section, .faq-section{
     flex: 1;
     
 }
 
 .img-wrapper{
     position: relative;
-    width: 600px;
+    width: 100%;
+    height: 345px;
     border: 2px solid red;
 }
 
-.illustration-woman{
+.svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* .illustration-woman{
     position: relative;
     max-width: 100%;
     border: 2px solid lime;
@@ -93,7 +100,7 @@ body {
     background-repeat: no-repeat;
     width: inherit;
     height: 100px;
-}
+} */
 
 .bg-pattern-desktop{
     height: 500px;
