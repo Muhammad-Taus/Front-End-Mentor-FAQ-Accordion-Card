@@ -25,7 +25,7 @@
 
 }
 
-*{
+* {
     text-decoration: none;
     list-style: none;
     padding: 0;
@@ -33,7 +33,8 @@
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
@@ -43,109 +44,63 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "YOPQ" 300;
-    /* background: linear-gradient(var(--clr-SoftViolet), var(--clr-SoftBlue)); */
+    background: linear-gradient(var(--clr-SoftViolet), var(--clr-SoftBlue));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1100px;
-    /* min-height: 70vh;
-    background-color: aqua; */
+
 }
 
-.main-card{
+.main-card {
     display: flex;
-    padding: 50px 80px;
-    border: 2px solid black;
+    padding-block: 50px;
+    padding-right: 80px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 27px 0px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    position: relative;
 }
 
-.illustration-section, .faq-section{
+.illustration-section,
+.faq-section {
     flex: 1;
     height: 500px;
-    /* border: 2px solid green; */
-    
 }
 
-.column{
-    height: inherit;
-    display: flex;
-    align-items: center;
-    background-color: blueviolet;
-}
-
-
-.img-wrapper{
-    position: relative;
-    height: 100%;
+.desktop {
     width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    border: 2px solid red;
-    
+    height: 100%;
 }
 
+.illustration-box {
+    position: absolute;
+    top: 45%;
+    left: -12%;
+    z-index: 10;
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+}
 
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
 
-.svg{
+.illustration-woman,
+.bg-pattern-desktop {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -15%;
+    z-index: 5;
 }
-
-
-
-
-/* .svg{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
- .illustration-woman{
-    left: 0px;
-    height: 300px;
-    width: 350px;
-}
-
-.illustration-box{
-    top: 0px;
-    left: 0px;
-} */
-
-
-
-
-
-
-/*
-.illustration-box, .bg-pattern-desktop{
-    position: absolute;
-    max-width: 100%;
-    left: 0;
-}
-
-.illustration-box{
-    border: 2px solid yellow;
-}
-
-.bg-pattern-desktop{
-    border: 2px solid blue;
-    background-image: url("/images/bg-pattern-desktop.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: inherit;
-    height: 100px;
-} */
-
-/* .bg-pattern-desktop{
-    height: 500px;
-}
-
-.illustration-box{
-    top: 50;
-} */
