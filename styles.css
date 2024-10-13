@@ -47,28 +47,48 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .container{
-    border: 2px solid black;
     width: 90%;
     max-width: 1100px;
+    /* min-height: 70vh;
+    background-color: aqua; */
+}
+
+.main-card{
     display: flex;
+    padding: 50px 80px;
+    border: 2px solid black;
 }
 
 .illustration-section, .faq-section{
     flex: 1;
+    height: 500px;
+    /* border: 2px solid green; */
     
 }
 
+.column{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+
 .img-wrapper{
     position: relative;
+    height: 100%;
     width: 100%;
-    height: 345px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
     border: 2px solid red;
+    
 }
+
+
 
 .svg{
     position: absolute;
@@ -76,12 +96,32 @@ body {
     left: 0;
 }
 
-/* .illustration-woman{
-    position: relative;
-    max-width: 100%;
-    border: 2px solid lime;
+
+
+
+/* .svg{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+ .illustration-woman{
+    left: 0px;
+    height: 300px;
+    width: 350px;
+}
+
+.illustration-box{
+    top: 0px;
+    left: 0px;
+} */
+
+
+
+
+
+
+/*
 .illustration-box, .bg-pattern-desktop{
     position: absolute;
     max-width: 100%;
@@ -102,10 +142,10 @@ body {
     height: 100px;
 } */
 
-.bg-pattern-desktop{
+/* .bg-pattern-desktop{
     height: 500px;
 }
 
 .illustration-box{
     top: 50;
-}
+} */
