@@ -260,7 +260,8 @@ body {
     }
 
     .accordion-title h3 {
-        font-size: 0.906rem;
+        font-size: 0.844rem;
+        /*13.5px*/
         /*14.5px*/
     }
 
