@@ -52,14 +52,17 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 68.75rem;
+    /*1100px*/
 
 }
 
 .main-card {
     display: flex;
-    padding-top: 60px;
-    padding-right: 90px;
+    padding-top: 3.75rem;
+    /*60px*/
+    padding-right: 5.625;
+    /*90px*/
     border-radius: 20px;
     box-shadow: 0px 15px 27px 0px rgba(0, 0, 0, 0.75);
     background-color: white;
@@ -70,7 +73,8 @@ body {
 .illustration-section,
 .faq-section {
     flex: 1;
-    min-height: 440px;
+    min-height: 27.5rem;
+    /*440px*/
 }
 
 
@@ -82,10 +86,10 @@ body {
 
 .illustration-box {
     position: absolute;
-    top: 44%;
+    top: 43%;
     left: -9%;
     z-index: 10;
-    transform: scale(1);
+    transform: scale(0.75);
     object-fit: contain;
 }
 
@@ -98,80 +102,108 @@ body {
 
 .illustration-woman,
 .bg-pattern-desktop {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
     position: absolute;
-    top: -5%;
+    top: 8%;
     left: -15%;
     z-index: 5;
 }
 
 .bg-pattern-desktop{
-    top: 5%;
-    left: -10%;
+    top: 13%;
+    left: -13%;
 }
 
 
 .faq-section h2 {
     font-size: xx-large;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
+    /*40px*/
 }
 
-.accordions-section{
-    padding-bottom: 60px;
+.accordions-section {
+    padding-bottom: 3.75rem;
+    /*60px*/
+    padding-right: 2.5rem;
+    /*40px*/
 }
 
 
 .accordion-title h3 {
-    font-size: 16px;
+    font-size: 1rem;
+    /*16px*/
     color: var(--clr-VeryDarkGrayishBlue);
     position: relative;
-    padding-block: 15px;
+    padding-block: 0.938rem;
+    /*15px*/
     cursor: pointer;
     border-bottom: 2px solid var(--clr-LightGrayishBlue);
     transition: all 0.5s ease;
 }
 
-.accordion-title h3:hover{
+.accordion-title h3:hover {
     color: var(--clr-SoftRed);
 }
 
 
-.accordion-title{
+.accordion-title {
     position: relative;
-    
+
 }
 
-.accordion-title img{
+.accordion-title img {
     position: absolute;
     top: 44%;
     right: 6%;
     transition: transform 0.4s ease;
 }
 
-.accordion-title img.active{
+.accordion-title img.active {
     transform: rotate(180deg);
 }
 
 
 
 .accordion p {
-    font-size: 14px;
+    font-size: 0.875rem;
+    /*14px*/
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s ease;
-   
+
 
 }
 
 .accordion p.active {
-    padding-block: 15px;
-    max-height: 200px;
+    padding-block: 0.938rem;
+    /*15px*/
+    max-height: 12.5rem;
+    /*200px*/
 
 }
 
 
 
+@media (max-width: 1050px) {
+
+    .illustration-woman,
+    .bg-pattern-desktop {
+        left: -9%;
+        
+    }
+
+    .illustration-box {
+        left: -11%;
+        transform: scale(0.6);
+    }
+}
 
 
+
+/* Mobile */
+@media (max-width: 850px){
+
+
+}
