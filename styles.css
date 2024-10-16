@@ -226,12 +226,22 @@ body {
 
     .faq-section h2 {
         text-align: center;
+        font-size: 28px;
     }
 
     .accordions-section {
-        padding-inline: 1.25rem;
         /*20px*/
         padding-bottom: 0;
+        padding-right: 0;
+    }
+    
+    .accordion{
+        padding-inline: 1.25rem;
+
+    }
+
+    .accordion-title h3{
+        font-size: 14.5px;
     }
 
 }
