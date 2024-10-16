@@ -70,7 +70,7 @@ body {
 .illustration-section,
 .faq-section {
     flex: 1;
-    height: 500px;
+    min-height: 440px;
 }
 
 
@@ -82,11 +82,10 @@ body {
 
 .illustration-box {
     position: absolute;
-    top: 50%;
-    left: -15%;
+    top: 44%;
+    left: -9%;
     z-index: 10;
-    width: 30%;
-    height: 30%;
+    transform: scale(1);
     object-fit: contain;
 }
 
@@ -103,9 +102,14 @@ body {
     height: 100%;
     object-fit: contain;
     position: absolute;
-    top: 0px;
+    top: -5%;
     left: -15%;
     z-index: 5;
+}
+
+.bg-pattern-desktop{
+    top: 5%;
+    left: -10%;
 }
 
 
@@ -114,45 +118,60 @@ body {
     padding-bottom: 40px;
 }
 
-.accordion h3 {
+.accordions-section{
+    padding-bottom: 60px;
+}
+
+
+.accordion-title h3 {
     font-size: 16px;
     color: var(--clr-VeryDarkGrayishBlue);
     position: relative;
-    /* background-color: aqua; */
     padding-block: 15px;
     cursor: pointer;
     border-bottom: 2px solid var(--clr-LightGrayishBlue);
+    transition: all 0.5s ease;
 }
 
-.accordion h3::before {
-    content: "+";
+.accordion-title h3:hover{
+    color: var(--clr-SoftRed);
+}
+
+
+.accordion-title{
+    position: relative;
+    
+}
+
+.accordion-title img{
     position: absolute;
-    right: 20px;
-    font-size: 18px;
+    top: 44%;
+    right: 6%;
     transition: transform 0.4s ease;
 }
 
-.accordion h3.active::before {
-    content: "-";
+.accordion-title img.active{
     transform: rotate(180deg);
 }
 
 
 
 .accordion p {
-    /* padding-block: 15px; */
-    /* margin-block: 15px; */
     font-size: 14px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
-    /* display: none; */
+    transition: all 0.4s ease;
+   
 
 }
 
 .accordion p.active {
-    /* background-color: aqua; */
     padding-block: 15px;
     max-height: 200px;
-    /* display: block; */
+
 }
+
+
+
+
+

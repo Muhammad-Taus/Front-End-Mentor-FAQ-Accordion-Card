@@ -1,14 +1,18 @@
-const accordions = document.querySelectorAll(".accordion h3");
+const accordionTitles = document.querySelectorAll(".accordion-title");
 
-
-accordions.forEach(accordion => {
-    accordion.addEventListener("click", () => {
+accordionTitles.forEach(accordionTitle => {
+    accordionTitle.addEventListener("click", () => {
         
-        const accordionText = accordion.nextElementSibling;
+        const accordionText = accordionTitle.nextElementSibling;
         
-        console.log(accordionText);
         accordionText.classList.toggle("active");
-        accordion.classList.toggle("active");
+        accordionTitle.childNodes[3].classList.toggle("active");
+        
+        // console.log(accordionTitle.childNodes);
+        // console.log(accordionTitle.childNodes[3]);
+        // console.log(accordionText);
 
     });
+
+
 });
