@@ -111,14 +111,14 @@ body {
     z-index: 5;
 }
 
-.bg-pattern-desktop{
+.bg-pattern-desktop {
     top: 13%;
     left: -13%;
 }
 
 
 .faq-section h2 {
-    font-size: xx-large;
+    font-size: 2rem;
     padding-bottom: 2.5rem;
     /*40px*/
 }
@@ -191,7 +191,7 @@ body {
     .illustration-woman,
     .bg-pattern-desktop {
         left: -9%;
-        
+
     }
 
     .illustration-box {
@@ -203,7 +203,35 @@ body {
 
 
 /* Mobile */
-@media (max-width: 850px){
+@media (max-width: 850px) {
 
+    .main-card {
+        display: flex;
+        flex-direction: column;
+        padding-block: 3.75rem;
+        /*60px*/
+        position: relative;
+
+    }
+
+    .illustration-section .desktop {
+        display: none !important;
+    }
+
+    .illustration-section,
+    .faq-section {
+        min-height: 0rem;
+
+    }
+
+    .faq-section h2 {
+        text-align: center;
+    }
+
+    .accordions-section {
+        padding-inline: 1.25rem;
+        /*20px*/
+        padding-bottom: 0;
+    }
 
 }
