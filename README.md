@@ -22,7 +22,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/Muhammad-Taus/Front-End-Mentor-FAQ-Accordion-Card)
 - Live Site URL: [Live site URL](https://mt-fem-faq-accordion-card.netlify.app/)
 
 ## My process
